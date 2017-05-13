@@ -1,7 +1,6 @@
 package extremecode.listviewtest;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,16 +17,12 @@ import java.util.ArrayList;
 
 public class MyListAdapter extends ArrayAdapter<ListModel> {
 
-    //members
-    private int count = 0;
-
     //default constructor
     public MyListAdapter(Context context, ArrayList<ListModel> model) {
         super(context, R.layout.items, model);
     }
 
     //getview here
-    @NonNull
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         //ViewHolder
